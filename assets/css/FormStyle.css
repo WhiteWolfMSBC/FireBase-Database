@@ -1,0 +1,236 @@
+
+body {
+  font-family: "Trirong", sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  }
+
+.form-check{
+    margin-top: -74px;
+    margin-left: 350px;
+}
+.form-container_row{
+    margin-top: 222px;
+    opacity: 0.8;
+}
+.form-container_col1{
+    background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px gray;
+	margin: 10px auto;
+	padding: 1rem;
+}
+.form-container_link{
+ text-decoration: none;
+}
+.form-container_link:hover{
+    text-decoration: underline;
+}
+
+.modal{
+    opacity: 0.85; 
+}
+
+
+
+
+
+
+
+
+
+/* Registration form */
+
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  
+  .form {
+    background-color: white;
+    width: 465px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(39, 41, 43, 0.2);
+  }
+  
+
+  .inputContainer {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 17px;
+  }
+  
+  .input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+  
+  ::placeholder {
+    color: transparent;
+  }
+  .title{
+    color: purple;
+  }
+  
+  .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #9867C5;
+    transform: translateY(-2px);
+  }
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: purple;
+  }
+  
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .input:focus {
+    border: 2px solid purple;
+  }
+
+
+/* Password */
+
+
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  /* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+
+
+ /* Pop Up Chat Button */
+
+ .open-button {
+      border-radius: 50%;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 100px;
+    }
+    
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    .form-container {
+      max-width: 250px;
+      padding: 10px;
+      background-color: white;
+    }
+    
+    .form-container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: white;
+      resize: none;
+      min-height: 200px;
+    }
+    
+    .form-container textarea:focus {
+      background-color: rgb(247, 243, 243);
+      outline: none;
+    }
+    
+    .form-container .btn:hover,
+    .open-button:hover {
+      opacity: 1;
+    }
+  
